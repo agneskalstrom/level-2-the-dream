@@ -8,7 +8,7 @@ const player = document.querySelector("[camera]");
 const word1 = "apple";
 const word2 = "rabies";
 const word3 = "bay";
-const ambience = new Audio("/assets/sounds/ambience.wav");
+const ambience = new Audio("assets/sounds/ambience.wav");
 
 player.addEventListener("collide", function (e) {
   let id = e.detail.body.el.getAttribute("id");
