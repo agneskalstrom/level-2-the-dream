@@ -34,7 +34,7 @@
           <a-entity
             camera
             look-controls
-            wasd-controls="acceleration: 25"
+            wasd-controls="acceleration: 15"
             kinematic-body
           >
           </a-entity>
@@ -58,7 +58,6 @@
           color="#eee"
           align="center"
           class="text"
-          dynamic-body
         ></a-text>
         <a-text
           value="2"
@@ -67,7 +66,6 @@
           color="#eee"
           align="center"
           class="text"
-          dynamic-body
         ></a-text>
         <a-text
           value="3"
@@ -76,7 +74,6 @@
           color="#eee"
           align="center"
           class="text"
-          dynamic-body
         ></a-text>
 
         <!-- Spheres -->
@@ -86,8 +83,7 @@
           radius="0.4"
           color="#fdfcf9"
           dynamic-body="mass:7"
-        >
-        </a-sphere>
+        ></a-sphere>
         <a-sphere
           position="0.5 0.1 -12"
           radius="0.5"
@@ -119,7 +115,37 @@
           dynamic-body="mass:1"
         ></a-sphere>
         <a-sphere
-          position="-1.5 0.1 -11.5"
+          position="-1.8 0.1 -11.5"
+          radius="0.6"
+          color="#fdfcf9"
+          dynamic-body="mass:10"
+        ></a-sphere>
+        <a-sphere
+          position="-1.8 0.1 -13.5"
+          radius="0.4"
+          color="#fdfcf9"
+          dynamic-body="mass:8"
+        ></a-sphere>
+        <a-sphere
+          position="-2.5 0.1 -13"
+          radius="0.4"
+          color="#fdfcf9"
+          dynamic-body="mass:6"
+        ></a-sphere>
+        <a-sphere
+          position="2 0.1 -10"
+          radius="0.3"
+          color="#fdfcf9"
+          dynamic-body="mass:4"
+        ></a-sphere>
+        <a-sphere
+          position="1.8 0.1 -13"
+          radius="0.5"
+          color="#fdfcf9"
+          dynamic-body="mass:8"
+        ></a-sphere>
+        <a-sphere
+          position="-0.5 0.1 -9.8"
           radius="0.6"
           color="#fdfcf9"
           dynamic-body="mass:10"
@@ -175,7 +201,7 @@
         <a-plane
           src="assets/images/qr-code-3.png"
           rotation="-90 0 0"
-          position="-3.9 0.01 -45.15"
+          position="-3.7 0.01 -45.15"
           width=".4"
           height=".4"
         ></a-plane>

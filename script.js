@@ -23,9 +23,11 @@ player.addEventListener("collide", function (e) {
         ambience.pause();
       } else {
         modal.classList.add("wobble");
+        modal.style.background = "#e72b49";
         setTimeout(function () {
           modal.classList.remove("wobble");
-        }, 1000);
+          modal.style.background = "#222";
+        }, 500);
       }
     });
     closeModal.addEventListener("click", function () {
