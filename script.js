@@ -9,6 +9,7 @@ const word1 = "apple";
 const word2 = "rabies";
 const word3 = "bay";
 const ambience = new Audio("./assets/sounds/ambience.wav");
+const error = new Audio("./assets/sounds/error.wav");
 
 player.addEventListener("collide", function (e) {
   let id = e.detail.body.el.getAttribute("id");
@@ -24,6 +25,7 @@ player.addEventListener("collide", function (e) {
       } else {
         modal.classList.add("wobble");
         modal.style.background = "#e72b49";
+        error.play();
         setTimeout(function () {
           modal.classList.remove("wobble");
           modal.style.background = "#222";
